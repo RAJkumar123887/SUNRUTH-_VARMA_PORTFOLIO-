@@ -87,12 +87,10 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
 <body>
 <div class="portfolio">
 
-  <!-- ===== HEADER · IMAGE 1 ===== -->
+  <!-- ===== HEADER · IMAGE 1 (PROFILE PHOTO) ===== -->
   <div class="profile-header">
     <div class="profile-image-container">
-      <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH.jpeg"
-           alt="Sunruth Varma"
-           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-user-circle\'></i>IMAGE 1</div>';" />
+      <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH.jpeg" alt="Sunruth Varma profile photo" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-user-circle\'></i>IMAGE 1</div>';" />
     </div>
     <div class="header-text">
       <h1>SUNRUTH VARMA</h1>
@@ -119,42 +117,31 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
     <div class="gallery-section">
       <h2><i class="fas fa-camera-retro"></i> Photo Gallery</h2>
       <div class="photo-grid">
-        <!-- IMAGE 2 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH1.jpeg"
-               alt="Gallery 2"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 2</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH1.jpeg" alt="Gallery image 2" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 2</div>';" />
         </div>
-        <!-- IMAGE 3 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH2.jpeg"
-               alt="Gallery 3"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 3</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH2.jpeg" alt="Gallery image 3" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 3</div>';" />
         </div>
-        <!-- IMAGE 4 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH3.jpeg"
-               alt="Gallery 4"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 4</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH3.jpeg" alt="Gallery image 4" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 4</div>';" />
         </div>
-        <!-- IMAGE 5 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH4.jpeg"
-               alt="Gallery 5"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 5</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH4.jpeg" alt="Gallery image 5" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 5</div>';" />
         </div>
-        <!-- IMAGE 6 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH5.jpeg"
-               alt="Gallery 6"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 6</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH5.jpeg" alt="Gallery image 6" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 6</div>';" />
         </div>
-        <!-- IMAGE 7 -->
+
         <div class="photo-card">
-          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH6.jpeg"
-               alt="Gallery 7"
-               onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 7</div>';" />
+          <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH6.jpeg" alt="Gallery image 7" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 7</div>';" />
         </div>
+
       </div>
     </div>
 
