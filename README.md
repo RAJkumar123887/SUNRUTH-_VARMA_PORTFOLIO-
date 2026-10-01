@@ -468,7 +468,7 @@ a[href^="tel"]{font-size:1rem}
       <h1>SUNRUTH VARMA</h1>
       <div class="tagline">Child Artist · Hyderabad</div>
       <div class="quick-info">
-        <span><i class="fas fa-cake-candles"></i> Age: 12</span>
+        <span><i class="fas fa-cake-candles"></i> Age: 15</span>
         <span><i class="fas fa-ruler-vertical"></i> 5 ft</span>
         <span><i class="fas fa-phone-alt"></i> 6301795784</span>
       </div>
