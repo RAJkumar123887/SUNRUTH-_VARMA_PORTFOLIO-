@@ -703,7 +703,7 @@ body{display:flex;justify-content:center;padding:2rem 1rem}
         <h3><i class="fas fa-id-card" style="margin-right:.4rem;color:#f7c948"></i>Details</h3>
         <div class="info-list">
           <p><strong>Name</strong> <span>Sunruth Varma</span></p>
-          <p><strong>Age</strong> <span>12 years</span></p>
+          <p><strong>Age</strong> <span>14 years</span></p>
           <p><strong>Location</strong> <span>Hyderabad</span></p>
           <p><strong>Height</strong> <span>5 feet</span></p>
           <p><strong>Contact</strong> <a href="tel:6301795784">Call Now</a></p>
