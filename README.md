@@ -1,28 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0" />
 <meta name="theme-color" content="#0f1a24" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Sunruth Varma" />
 <meta name="format-detection" content="telephone=yes" />
 <title>Sunruth Varma · Child Artist Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 <style>
 /* ================= RESET ================= */
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{height:100%}
 body{
   font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   background:#f0f5fa;color:#1e2b3c;line-height:1.5;
-  display:flex;justify-content:center;
-  padding:2rem 1rem;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 
-/* ================= DESKTOP (default) ================= */
+/* ================= DESKTOP LAYOUT (default) ================= */
+body{display:flex;justify-content:center;padding:2rem 1rem;min-height:100vh}
 .portfolio{max-width:1200px;width:100%;background:#fff;border-radius:2.5rem;box-shadow:0 30px 50px -20px rgba(0,20,30,.25);overflow:hidden}
+
+/* HEADER */
 .profile-header{display:flex;align-items:center;gap:2rem;background:linear-gradient(145deg,#0f1a24,#1e2b3c);padding:2rem 2.8rem;color:#fff;flex-wrap:wrap}
 .profile-image-container{flex-shrink:0;width:140px;height:140px;border-radius:50%;border:5px solid #f7c948;box-shadow:0 10px 20px rgba(0,0,0,.35);overflow:hidden;background:#2e3f52;display:flex;align-items:center;justify-content:center}
 .profile-image-container img{width:100%;height:100%;object-fit:cover;display:block}
@@ -33,9 +37,9 @@ body{
 .quick-info span{display:flex;align-items:center;gap:.5rem}
 .quick-info i{color:#f7c948;font-size:1.1rem}
 
+/* TABS */
 .tab-bar{display:flex;flex-wrap:wrap;gap:.5rem;padding:1.5rem 2.8rem 0 2.8rem;background:#fff;border-bottom:2px solid #e6edf5}
 .tab-btn{background:transparent;border:none;padding:.9rem 1.6rem;font-size:1rem;font-weight:600;font-family:inherit;color:#5c6f82;cursor:pointer;border-radius:1rem 1rem 0 0;transition:.2s;display:inline-flex;align-items:center;gap:.5rem;position:relative;top:2px}
-.tab-btn:hover{color:#1e2b3c;background:#f2f8ff}
 .tab-btn.active{color:#0f1a24;background:#f2f8ff;border-bottom:3px solid #f7c948;font-weight:700}
 .tab-btn.active i{color:#f7c948}
 
@@ -43,46 +47,48 @@ body{
 .tab-panel.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 
+/* GALLERY */
 .gallery-section h2{font-size:1.7rem;font-weight:700;color:#0f1a24;margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem}
 .gallery-section h2 i{color:#f7c948;font-size:1.8rem}
 .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.3rem;margin-bottom:.5rem}
 .photo-card{background:#eef2f7;border-radius:1.6rem;overflow:hidden;box-shadow:0 8px 16px -6px rgba(0,0,0,.1);transition:transform .2s,box-shadow .2s;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;border:3px solid #fff;outline:1px solid #dbe4ed}
-.photo-card:hover{transform:translateY(-4px) scale(1.01);box-shadow:0 18px 28px -8px rgba(0,30,50,.2)}
 .photo-card img{width:100%;height:100%;object-fit:cover;display:block}
 .img-fallback{background:#d9e2ec;display:flex;align-items:center;justify-content:center;color:#2e3f52;font-weight:600;font-size:1rem;text-align:center;padding:.5rem;width:100%;height:100%;flex-direction:column;gap:.3rem}
 .img-fallback i{font-size:2rem;opacity:.6}
 
+/* DETAILS */
 .details-section{display:grid;grid-template-columns:1fr 2fr;gap:2rem}
 .info-card{background:#f8fbfe;border-radius:2rem;padding:2rem 1.8rem;box-shadow:inset 0 0 0 1px #fff,0 10px 20px -10px rgba(0,0,0,.05);border:1px solid #e6edf5}
 .info-card h3{font-size:1.4rem;font-weight:700;color:#0f1a24;margin-bottom:1.5rem;border-bottom:4px solid #f7c948;display:inline-block;padding-bottom:.4rem}
 .info-list p{margin-bottom:.9rem;font-size:1.05rem;color:#2e3f52;display:flex;align-items:baseline;flex-wrap:wrap}
 .info-list strong{width:110px;display:inline-block;font-weight:700;color:#0f1a24}
-.info-list a{color:#0f1a24;text-decoration:none;font-weight:600;background:#f7c948;padding:.2rem 1rem;border-radius:40px;font-size:.95rem;transition:.2s;display:inline-block;margin-top:.2rem}
+.info-list a{color:#0f1a24;text-decoration:none;font-weight:600;background:#f7c948;padding:.2rem 1rem;border-radius:40px;font-size:.95rem;display:inline-block;margin-top:.2rem}
 
 .experience-list{display:flex;flex-direction:column;gap:1.4rem}
-.exp-item{background:#fff;border-radius:1.6rem;padding:1.4rem 1.8rem;box-shadow:0 6px 14px rgba(0,0,0,.02);border-left:6px solid #f7c948;transition:.15s;border:1px solid #e6edf5;border-left-width:6px}
-.exp-item:hover{box-shadow:0 12px 24px -10px rgba(0,30,50,.15);border-color:#d0dfee;border-left-color:#f7c948}
+.exp-item{background:#fff;border-radius:1.6rem;padding:1.4rem 1.8rem;box-shadow:0 6px 14px rgba(0,0,0,.02);border-left:6px solid #f7c948;border:1px solid #e6edf5;border-left-width:6px}
 .exp-item h4{font-size:1.2rem;font-weight:700;color:#0f1a24;margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 .exp-item h4 i{color:#f7c948;font-size:1rem}
 .exp-item .role{font-weight:600;color:#1e5c8b;margin-bottom:.5rem;font-size:1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
 .exp-item .role .badge{background:#e3eef9;padding:.2rem 1rem;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:#0f1a24}
 .exp-item .video-links{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.7rem}
-.exp-item .video-links a{color:#0f1a24;text-decoration:none;background:#eef2f7;padding:.35rem 1.2rem;border-radius:40px;font-size:.88rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;border:1px solid #d0dfee}
+.exp-item .video-links a{color:#0f1a24;text-decoration:none;background:#eef2f7;padding:.35rem 1.2rem;border-radius:40px;font-size:.88rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;border:1px solid #d0dfee}
 .exp-item .video-links a i{color:#f7c948;font-size:.9rem}
 .award-tag{background:#f7c948;color:#0f1a24;font-weight:700;font-size:.8rem;padding:.25rem 1rem;border-radius:40px;display:inline-block;margin-left:.6rem}
 
+/* ABOUT */
 .about-content{max-width:900px;margin:0 auto}
 .about-content h2{font-size:1.9rem;font-weight:700;color:#0f1a24;margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem}
 .about-content h2 i{color:#f7c948;font-size:2rem}
-.about-card{background:#f8fbfe;border-radius:2rem;padding:2rem 2.2rem;border:1px solid #e6edf5;box-shadow:0 10px 20px -12px rgba(0,0,0,.08);line-height:1.8;font-size:1.05rem;color:#2e3f52}
+.about-card{background:#f8fbfe;border-radius:2rem;padding:2rem 2.2rem;border:1px solid #e6edf5;line-height:1.8;font-size:1.05rem;color:#2e3f52}
 .about-card p{margin-bottom:1.2rem}
 .about-card .highlight{background:#fff6d9;padding:.15rem .6rem;border-radius:30px;font-weight:600;color:#0f1a24;display:inline-block}
 .about-card .quote-mark{color:#f7c948;font-size:1.4rem;margin-right:.4rem;vertical-align:middle;opacity:.8}
 
+/* CONTACT */
 .contact-content{max-width:700px;margin:0 auto}
 .contact-content h2{font-size:1.9rem;font-weight:700;color:#0f1a24;margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem}
 .contact-content h2 i{color:#f7c948;font-size:2rem}
-.contact-card{background:linear-gradient(145deg,#0f1a24,#1e2b3c);border-radius:2rem;padding:2.5rem 2.2rem;color:#fff;box-shadow:0 18px 30px -14px rgba(0,20,30,.4)}
+.contact-card{background:linear-gradient(145deg,#0f1a24,#1e2b3c);border-radius:2rem;padding:2.5rem 2.2rem;color:#fff}
 .contact-card .contact-row{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
 .contact-card .contact-row:last-child{border-bottom:none}
 .contact-card .contact-icon{width:52px;height:52px;background:rgba(247,201,72,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(247,201,72,.3)}
@@ -93,142 +99,157 @@ body{
 .contact-card .contact-detail .value a{color:#f7c948;text-decoration:none;border-bottom:2px dotted rgba(247,201,72,.5)}
 .contact-note{margin-top:1.8rem;background:#f2f8ff;border-radius:1.4rem;padding:1.2rem 1.6rem;font-size:.95rem;color:#2e3f52;border:1px dashed #b8cee4;text-align:center}
 
-/* =====================================================
-   MOBILE — iOS / ANDROID APP-STYLE LAYOUT
-   ===================================================== */
-@media (max-width: 768px) {
+/* ============================================================
+   iOS / ANDROID MOBILE APP LAYOUT
+   ============================================================ */
+@media (max-width: 820px) {
 
-  /* Body: gives room for fixed bottom nav */
+  /* Prevent body padding from messing layout */
   body{
-    padding:0;
     display:block;
-    background:#f4f6fa;
-    padding-bottom:calc(72px + env(safe-area-inset-bottom));
+    padding:0;
+    background:#eef2f8;
+    /* Reserve space for the fixed bottom nav + iOS home bar */
+    padding-bottom:calc(76px + env(safe-area-inset-bottom));
+    min-height:100vh;
+    min-height:100dvh;
   }
 
   .portfolio{
     max-width:100%;
     border-radius:0;
     box-shadow:none;
-    background:#f4f6fa;
-    min-height:100vh;
+    background:#eef2f8;
+    overflow:visible;
   }
 
-  /* ---------- HEADER: APP-STYLE PROFILE CARD ---------- */
+  /* ---------- HEADER: iOS PROFILE CARD ---------- */
   .profile-header{
+    display:flex;
     flex-direction:column;
     align-items:center;
     text-align:center;
-    padding:calc(2rem + env(safe-area-inset-top)) 1.25rem 1.5rem;
-    gap:.9rem;
-    background:linear-gradient(160deg,#0f1a24 0%,#1e2b3c 60%,#263a52 100%);
+    padding:calc(1.75rem + env(safe-area-inset-top)) 1.15rem 1.4rem;
+    gap:.8rem;
+    background:linear-gradient(160deg,#0f1a24 0%,#1b2a3d 55%,#263a52 100%);
     border-radius:0 0 28px 28px;
-    box-shadow:0 8px 24px -8px rgba(0,20,30,.35);
+    box-shadow:0 8px 24px -8px rgba(0,20,30,.4);
     position:relative;
+    z-index:1;
   }
 
   .profile-image-container{
-    width:118px;height:118px;
+    width:112px;height:112px;
     border:4px solid #f7c948;
-    box-shadow:0 12px 24px rgba(0,0,0,.35);
+    box-shadow:0 12px 24px rgba(0,0,0,.4);
+    order:1;
   }
 
+  .header-text{order:2;width:100%}
   .header-text h1{
-    font-size:1.7rem;
+    font-size:1.65rem;
     letter-spacing:-.4px;
-    margin-bottom:.2rem;
+    margin-bottom:.15rem;
+    line-height:1.2;
   }
   .header-text .tagline{
     border-left:none;
     padding-left:0;
-    font-size:.92rem;
+    font-size:.88rem;
     font-weight:500;
     opacity:.85;
-    margin-bottom:1rem;
+    margin-bottom:.9rem;
   }
 
-  /* Info chips: horizontal row like native app */
+  /* Info chips row */
   .quick-info{
     display:flex;
     flex-wrap:nowrap;
     justify-content:center;
-    gap:.5rem;
-    padding:.55rem .8rem;
+    gap:.4rem;
+    padding:.55rem .7rem;
     border-radius:40px;
     background:rgba(255,255,255,.1);
     border:1px solid rgba(255,255,255,.15);
-    backdrop-filter:blur(12px);
     width:100%;
     max-width:340px;
+    margin:0 auto;
     overflow:hidden;
   }
   .quick-info span{
     flex:1;
     justify-content:center;
-    font-size:.78rem;
+    font-size:.72rem;
     font-weight:600;
-    gap:.35rem;
+    gap:.3rem;
     white-space:nowrap;
     color:#fff;
   }
-  .quick-info i{font-size:.9rem}
+  .quick-info i{font-size:.85rem}
 
-  /* ---------- TABS → BOTTOM NAVIGATION BAR ---------- */
+  /* ---------- TABS → FIXED BOTTOM NAV ---------- */
   .tab-bar{
     position:fixed;
-    bottom:0;left:0;right:0;
+    bottom:0;
+    left:0;
+    right:0;
     padding:0;
     margin:0;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.98);
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
     border-top:1px solid #e0e7ef;
     border-bottom:none;
     display:flex;
     justify-content:space-around;
     align-items:stretch;
-    z-index:1000;
+    z-index:9999;
+    /* iOS home-indicator safe area */
     padding-bottom:env(safe-area-inset-bottom);
-    box-shadow:0 -4px 20px rgba(0,0,0,.06);
+    box-shadow:0 -4px 22px rgba(0,0,0,.07);
     gap:0;
     overflow:visible;
+    flex-wrap:nowrap;
   }
   .tab-btn{
     flex:1;
     flex-direction:column;
     justify-content:center;
-    gap:.2rem;
-    padding:.65rem .25rem .55rem;
+    align-items:center;
+    gap:0;
+    padding:.7rem .25rem .55rem;
     border-radius:0;
-    font-size:.7rem;
+    font-size:.66rem;
     font-weight:600;
     color:#8a9bb0;
     background:transparent;
     top:0;
-    letter-spacing:.2px;
-    transition:color .15s;
     position:relative;
+    min-height:56px;
+    transition:color .15s;
   }
   .tab-btn i{
-    font-size:1.25rem;
-    margin-bottom:.15rem;
+    font-size:1.2rem;
+    margin-bottom:.2rem;
     transition:transform .15s;
   }
-  .tab-btn:hover{background:transparent;color:#5c6f82}
   .tab-btn.active{
     color:#0f1a24;
+    font-weight:700;
     background:transparent;
     border-bottom:none;
-    font-weight:700;
   }
-  .tab-btn.active i{color:#f7c948;transform:scale(1.1)}
+  .tab-btn.active i{
+    color:#f7c948;
+    transform:scale(1.12);
+  }
   .tab-btn.active::after{
     content:"";
     position:absolute;
     top:.35rem;
     left:50%;
     transform:translateX(-50%);
-    width:34px;height:3px;
+    width:30px;height:3px;
     background:#f7c948;
     border-radius:3px;
   }
@@ -239,13 +260,13 @@ body{
     animation:fadeIn .25s ease;
   }
 
-  /* ---------- GALLERY: 2-COLUMN IOS CARDS ---------- */
+  /* ---------- GALLERY: 2-COLUMN iOS CARDS ---------- */
   .gallery-section h2{
     font-size:1.1rem;
     font-weight:700;
     margin-bottom:.9rem;
     gap:.55rem;
-    padding-left:.15rem;
+    padding-left:.1rem;
   }
   .gallery-section h2 i{font-size:1.2rem}
 
@@ -261,33 +282,32 @@ body{
     box-shadow:0 4px 14px rgba(0,20,30,.08);
     transition:transform .15s;
   }
-  .photo-card:active{transform:scale(.97)}
   .photo-card img{border-radius:18px}
+  .photo-card:active{transform:scale(.97)}
 
-  /* ---------- DETAILS: ICON ROWS ---------- */
+  /* ---------- DETAILS: iOS LIST ROWS ---------- */
   .details-section{
     grid-template-columns:1fr;
     gap:1rem;
-    margin-top:1.5rem;
+    margin-top:1.4rem;
   }
 
   .info-card{
-    padding:1.2rem 1.1rem;
-    border-radius:20px;
+    padding:1.15rem 1.1rem;
+    border-radius:18px;
     background:#fff;
     border:1px solid #eaeff6;
     box-shadow:0 4px 16px rgba(0,20,30,.05);
-    box-shadow:0 4px 16px rgba(0,20,30,.05);
+    margin-bottom:0;
   }
   .info-card h3{
-    font-size:1.05rem;
+    font-size:1.02rem;
     font-weight:700;
-    margin-bottom:1rem;
-    padding-bottom:.45rem;
+    margin-bottom:.9rem;
+    padding-bottom:.4rem;
     border-bottom:3px solid #f7c948;
   }
 
-  /* Personal details become rows with icon look */
   .info-list{
     display:flex;
     flex-direction:column;
@@ -297,24 +317,25 @@ body{
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
-    gap:.5rem;
+    gap:.6rem;
     margin-bottom:0;
     padding:.7rem 0;
-    font-size:.95rem;
+    font-size:.92rem;
     border-bottom:1px solid #eef2f8;
     color:#1e2b3c;
   }
   .info-list p:last-child{border-bottom:none}
   .info-list strong{
     width:auto;
-    font-size:.82rem;
-    font-weight:600;
-    color:#5c6f82;
+    font-size:.72rem;
+    font-weight:700;
+    color:#8a9bb0;
     text-transform:uppercase;
-    letter-spacing:.4px;
+    letter-spacing:.5px;
+    flex-shrink:0;
   }
   .info-list a{
-    font-size:.85rem;
+    font-size:.82rem;
     font-weight:700;
     padding:.35rem 1rem;
     background:#f7c948;
@@ -323,106 +344,80 @@ body{
     box-shadow:0 2px 6px rgba(247,201,72,.35);
   }
 
-  /* ---------- EXPERIENCE: IOS LIST CARDS ---------- */
+  /* ---------- EXPERIENCE: iOS CARDS ---------- */
   .experience-list{gap:.85rem}
-
   .exp-item{
-    padding:1.05rem 1.15rem;
+    padding:1rem 1.1rem;
     border-radius:18px;
     border:1px solid #eaeff6;
     border-left:5px solid #f7c948;
     background:#fff;
     box-shadow:0 4px 14px rgba(0,20,30,.04);
   }
-
-  .exp-item h4{
-    font-size:1rem;
-    margin-bottom:.3rem;
-    gap:.45rem;
-  }
-  .exp-item h4 i{font-size:.92rem}
-
+  .exp-item h4{font-size:.98rem;margin-bottom:.3rem;gap:.4rem;line-height:1.3}
+  .exp-item h4 i{font-size:.9rem}
   .exp-item .role{
-    font-size:.86rem;
-    margin-bottom:.55rem;
+    font-size:.85rem;
+    margin-bottom:.5rem;
     color:#1e5c8b;
-    gap:.45rem;
+    gap:.4rem;
     line-height:1.45;
   }
-  .exp-item .role .badge{
-    font-size:.65rem;
-    padding:.18rem .7rem;
-    letter-spacing:.4px;
-  }
-
-  .exp-item .video-links{
-    gap:.5rem;
-    margin-top:.55rem;
-  }
+  .exp-item .role .badge{font-size:.62rem;padding:.15rem .65rem}
+  .exp-item .video-links{gap:.45rem;margin-top:.5rem}
   .exp-item .video-links a{
-    font-size:.8rem;
-    padding:.45rem 1rem;
+    font-size:.78rem;
+    padding:.45rem .95rem;
     border-radius:40px;
     background:#f2f6fb;
     border:1px solid #dde6f0;
     font-weight:600;
   }
-  .exp-item .video-links a i{font-size:.85rem}
+  .exp-item .video-links a i{font-size:.82rem}
   .exp-item .video-links a:active{
     background:#f7c948;
     border-color:#f7c948;
     transform:scale(.97);
   }
-
-  .award-tag{
-    font-size:.72rem;
-    padding:.2rem .8rem;
-    margin-left:.4rem;
-  }
+  .award-tag{font-size:.7rem;padding:.18rem .75rem;margin-left:.35rem}
 
   /* ---------- ABOUT ---------- */
   .about-content h2{
-    font-size:1.25rem;
-    gap:.55rem;
-    margin-bottom:1rem;
-    padding-left:.15rem;
+    font-size:1.2rem;
+    gap:.5rem;
+    margin-bottom:.9rem;
+    padding-left:.1rem;
   }
-  .about-content h2 i{font-size:1.4rem}
-
+  .about-content h2 i{font-size:1.35rem}
   .about-card{
-    padding:1.3rem 1.2rem;
-    border-radius:20px;
-    font-size:.95rem;
+    padding:1.25rem 1.15rem;
+    border-radius:18px;
+    font-size:.93rem;
     line-height:1.75;
     background:#fff;
     border:1px solid #eaeff6;
     box-shadow:0 4px 16px rgba(0,20,30,.05);
   }
   .about-card p{margin-bottom:1rem}
-  .about-card .highlight{
-    font-size:.88rem;
-    padding:.1rem .5rem;
-  }
-  .about-card .quote-mark{font-size:1.2rem}
+  .about-card .highlight{font-size:.85rem;padding:.1rem .5rem}
+  .about-card .quote-mark{font-size:1.15rem}
 
-  /* ---------- CONTACT: NATIVE CONTACTS APP STYLE ---------- */
+  /* ---------- CONTACT: NATIVE CONTACTS STYLE ---------- */
   .contact-content h2{
-    font-size:1.25rem;
-    gap:.55rem;
-    margin-bottom:1rem;
-    padding-left:.15rem;
+    font-size:1.2rem;
+    gap:.5rem;
+    margin-bottom:.9rem;
+    padding-left:.1rem;
   }
-  .contact-content h2 i{font-size:1.4rem}
-
+  .contact-content h2 i{font-size:1.35rem}
   .contact-card{
-    border-radius:20px;
+    border-radius:18px;
     padding:0;
     overflow:hidden;
     background:#fff;
     box-shadow:0 4px 16px rgba(0,20,30,.06);
     border:1px solid #eaeff6;
   }
-
   .contact-card .contact-row{
     padding:1rem 1.1rem;
     gap:.9rem;
@@ -431,28 +426,22 @@ body{
     flex-wrap:nowrap;
   }
   .contact-card .contact-row:last-child{border-bottom:none}
-
   .contact-card .contact-icon{
     width:42px;height:42px;
     background:rgba(247,201,72,.15);
     border:1px solid rgba(247,201,72,.35);
   }
-  .contact-card .contact-icon i{
-    font-size:1.05rem;
-    color:#b98d0d;
-  }
-
+  .contact-card .contact-icon i{font-size:1.05rem;color:#b98d0d}
   .contact-card .contact-detail{flex:1;min-width:0}
   .contact-card .contact-detail .label{
-    font-size:.7rem;
+    font-size:.68rem;
     font-weight:700;
     color:#8a9bb0;
     letter-spacing:.6px;
     margin-bottom:.15rem;
-    text-transform:uppercase;
   }
   .contact-card .contact-detail .value{
-    font-size:1rem;
+    font-size:.98rem;
     font-weight:700;
     color:#0f1a24;
     word-break:break-word;
@@ -464,58 +453,58 @@ body{
     padding:.3rem .9rem;
     border-radius:40px;
     display:inline-block;
-    font-size:.88rem;
+    font-size:.85rem;
     font-weight:700;
   }
-
   .contact-note{
-    margin-top:1.2rem;
-    padding:1rem 1.15rem;
-    font-size:.88rem;
-    border-radius:16px;
+    margin-top:1.1rem;
+    padding:1rem 1.1rem;
+    font-size:.86rem;
+    border-radius:14px;
     background:#fff;
     border:1px dashed #b8cee4;
     line-height:1.6;
   }
 }
 
-/* ================= SMALL PHONES ================= */
+/* ================= EXTRA SMALL PHONES ================= */
 @media (max-width: 380px) {
-  .header-text h1{font-size:1.5rem}
-  .profile-image-container{width:104px;height:104px}
-  .quick-info span{font-size:.72rem}
-  .quick-info i{font-size:.82rem}
-
+  .header-text h1{font-size:1.45rem}
+  .profile-image-container{width:100px;height:100px}
+  .quick-info span{font-size:.66rem}
+  .quick-info i{font-size:.78rem}
+  .tab-btn{font-size:.6rem}
+  .tab-btn i{font-size:1.1rem}
   .photo-grid{gap:.55rem}
   .photo-card{border-radius:14px}
   .photo-card img{border-radius:14px}
-
-  .info-card{padding:1rem .9rem}
+  .info-card{padding:1rem .95rem}
   .exp-item{padding:.9rem 1rem}
-  .about-card{padding:1.15rem 1rem;font-size:.9rem}
-
-  .tab-btn{font-size:.64rem}
-  .tab-btn i{font-size:1.1rem}
+  .about-card{padding:1.1rem 1rem;font-size:.88rem}
 }
 
-/* ================= SAFE AREA ================= */
-@supports (padding: max(0px)) {
-  @media (max-width: 768px) {
-    .profile-header{
-      padding-top:calc(2rem + env(safe-area-inset-top));
-    }
-    .tab-panel{
-      padding-left:max(1rem, env(safe-area-inset-left));
-      padding-right:max(1rem, env(safe-area-inset-right));
-    }
-  }
+/* ================= iPAD / LARGE TABLET (769–1024) ================= */
+@media (min-width: 821px) and (max-width: 1024px) {
+  .portfolio{border-radius:2rem}
+  .profile-header{padding:2rem 2rem}
+  .tab-panel{padding:1.75rem 2rem 2.25rem}
+  .info-card{padding:1.75rem 1.5rem}
+  .profile-image-container{width:130px;height:130px}
+  .header-text h1{font-size:2.3rem}
 }
 
-/* ================= DISABLE HOVER ON TOUCH ================= */
+/* ================= NO-HOVER ON TOUCH ================= */
 @media (hover: none) {
-  .photo-card:hover{transform:none;box-shadow:0 4px 14px rgba(0,20,30,.08)}
+  .photo-card:hover{transform:none}
   .exp-item:hover{box-shadow:0 4px 14px rgba(0,20,30,.04)}
-  .info-list a:hover{transform:none}
+}
+
+/* ================= LANDSCAPE PHONE ================= */
+@media (max-width: 820px) and (orientation: landscape) {
+  .profile-header{padding:1.25rem 1rem}
+  .profile-image-container{width:88px;height:88px}
+  .header-text h1{font-size:1.35rem}
+  .quick-info{max-width:400px}
 }
 </style>
 </head>
@@ -538,7 +527,7 @@ body{
     </div>
   </div>
 
-  <!-- ===== TABS (bottom nav on mobile) ===== -->
+  <!-- ===== TABS (fixed bottom nav on mobile) ===== -->
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="portfolio"><i class="fas fa-images"></i> Portfolio</button>
     <button class="tab-btn" data-tab="about"><i class="fas fa-user"></i> About</button>
@@ -590,8 +579,8 @@ body{
           <p><strong>Contact</strong> <a href="tel:6301795784">Call Now</a></p>
           <p><strong>Started</strong> <span>2022</span></p>
         </div>
-        <div style="margin-top:1.2rem;background:#fff8e6;border-radius:14px;padding:.85rem 1rem;border:1px solid #f7e6b0">
-          <p style="font-size:.88rem;color:#0f1a24;display:flex;gap:.5rem;align-items:flex-start">
+        <div style="margin-top:1.1rem;background:#fff8e6;border-radius:14px;padding:.85rem 1rem;border:1px solid #f7e6b0">
+          <p style="font-size:.86rem;color:#0f1a24;display:flex;gap:.5rem;align-items:flex-start">
             <i class="fas fa-star" style="color:#f7c948;margin-top:.15rem"></i>
             <span><strong>National Award</strong> for short film <em>Aksharabhyasam</em></span>
           </p>
@@ -704,8 +693,10 @@ body{
     const t = this.dataset.tab;
     btns.forEach(x=>x.classList.toggle('active', x.dataset.tab===t));
     Object.keys(panels).forEach(k=>panels[k].classList.toggle('active', k===t));
-    // Scroll to top on mobile when switching tabs
-    window.scrollTo({top:0, behavior:'smooth'});
+    // Smooth scroll to top when switching tabs on mobile
+    if (window.innerWidth <= 820) {
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
   }));
 })();
 </script>
