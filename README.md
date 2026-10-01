@@ -658,7 +658,7 @@ body{display:flex;justify-content:center;padding:2rem 1rem}
       <h1>SUNRUTH VARMA</h1>
       <div class="tagline">Child Artist · Hyderabad</div>
       <div class="quick-info">
-        <span><i class="fas fa-cake-candles"></i> 12</span>
+        <span><i class="fas fa-cake-candles"></i> 12 years</span>
         <span><i class="fas fa-ruler-vertical"></i> 5 ft</span>
         <span><i class="fas fa-phone-alt"></i> 6301795784</span>
       </div>
@@ -704,7 +704,7 @@ body{display:flex;justify-content:center;padding:2rem 1rem}
         <h3><i class="fas fa-id-card" style="margin-right:.4rem;color:#f7c948"></i>Details</h3>
         <div class="info-list">
           <p><strong>Name</strong> <span>Sunruth Varma</span></p>
-          <p><strong>Age</strong> <span>12</span></p>
+          <p><strong>Age</strong> <span>12 years</span></p>
           <p><strong>Location</strong> <span>Hyderabad</span></p>
           <p><strong>Height</strong> <span>5 feet</span></p>
           <p><strong>Contact</strong> <a href="tel:6301795784">Call Now</a></p>
