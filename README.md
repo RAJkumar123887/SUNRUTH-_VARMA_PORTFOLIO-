@@ -87,7 +87,6 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
 <body>
 <div class="portfolio">
 
-  <!-- ===== HEADER · IMAGE 1 (PROFILE PHOTO) ===== -->
   <div class="profile-header">
     <div class="profile-image-container">
       <img src="https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH.jpeg" alt="Sunruth Varma profile photo" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-user-circle\'></i>IMAGE 1</div>';" />
@@ -103,17 +102,14 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
     </div>
   </div>
 
-  <!-- ===== TABS ===== -->
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="portfolio"><i class="fas fa-images"></i> Portfolio</button>
     <button class="tab-btn" data-tab="about"><i class="fas fa-user"></i> About</button>
     <button class="tab-btn" data-tab="contact"><i class="fas fa-envelope"></i> Contact Us</button>
   </div>
 
-  <!-- ===== TAB 1: PORTFOLIO ===== -->
   <div class="tab-panel active" id="panel-portfolio">
 
-    <!-- GALLERY · IMAGES 2–7 -->
     <div class="gallery-section">
       <h2><i class="fas fa-camera-retro"></i> Photo Gallery</h2>
       <div class="photo-grid">
@@ -145,7 +141,6 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
       </div>
     </div>
 
-    <!-- DETAILS + EXPERIENCE -->
     <div class="details-section">
       <div class="info-card">
         <h3><i class="fas fa-id-card" style="margin-right:.6rem;color:#f7c948"></i>Details</h3>
@@ -215,7 +210,6 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
     </div>
   </div>
 
-  <!-- ===== TAB 2: ABOUT ===== -->
   <div class="tab-panel" id="panel-about">
     <div class="about-content">
       <h2><i class="fas fa-user-circle"></i> About Sunruth Varma</h2>
@@ -230,7 +224,6 @@ body{background:#f0f5fa;font-family:'Inter',sans-serif;display:flex;justify-cont
     </div>
   </div>
 
-  <!-- ===== TAB 3: CONTACT ===== -->
   <div class="tab-panel" id="panel-contact">
     <div class="contact-content">
       <h2><i class="fas fa-address-book"></i> Contact Us</h2>
