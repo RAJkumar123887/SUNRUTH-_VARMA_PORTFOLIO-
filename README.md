@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -658,7 +657,7 @@ body{display:flex;justify-content:center;padding:2rem 1rem}
       <h1>SUNRUTH VARMA</h1>
       <div class="tagline">Child Artist · Hyderabad</div>
       <div class="quick-info">
-        <span><i class="fas fa-cake-candles"></i> 12 yrs</span>
+        <span><i class="fas fa-cake-candles"></i> 14 yrs</span>
         <span><i class="fas fa-ruler-vertical"></i> 5 ft</span>
         <span><i class="fas fa-phone-alt"></i> 6301795784</span>
       </div>
