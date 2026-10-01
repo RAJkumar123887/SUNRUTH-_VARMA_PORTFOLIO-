@@ -706,7 +706,7 @@
         <div class="photo-grid">
           <!-- IMAGE 2 -->
           <div class="photo-card">
-            <img src="https://via.placeholder.com/400x400?text=IMAGE+2" 
+            <img src=SUNRUTH.jpeg"" 
                  alt="Gallery image 2"
                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'img-fallback\'><i class=\'fas fa-image\'></i>IMAGE 2</div>';" />
           </div>
