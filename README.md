@@ -703,7 +703,7 @@
       <!-- GALLERY: IMAGES 2–7 -->
       <div class="gallery-section">
         <h2><i class="fas fa-camera-retro"></i> Photo Gallery</h2>
-        <div class="photo-grid">
+        <div class="https://github.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/blob/main/SUNRUTH.jpeg?raw=true">
           <!-- IMAGE 2 -->
           <div class="photo-card">
             <img src=SUNRUTH.jpeg"" 
