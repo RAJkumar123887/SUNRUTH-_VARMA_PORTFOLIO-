@@ -978,13 +978,13 @@
   <!-- ============================================================
        GITHUB IMAGE URLS — REPLACE THE PLACEHOLDERS BELOW:
 
-       IMAGE 1 (Profile Photo)  : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image1.jpg
-       IMAGE 2 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image2.jpg
-       IMAGE 3 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image3.jpg
-       IMAGE 4 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image4.jpg
-       IMAGE 5 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image5.jpg
-       IMAGE 6 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image6.jpg
-       IMAGE 7 (Gallery)        : https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/image7.jpg
+       IMAGE 1 (Profile Photo)  : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH.jpeg
+       IMAGE 2 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH1.jpeg
+       IMAGE 3 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH2.jpeg
+       IMAGE 4 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH3.jpeg
+       IMAGE 5 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH4.jpeg
+       IMAGE 6 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH5.jpeg
+       IMAGE 7 (Gallery)        : https://raw.githubusercontent.com/RAJkumar123887/SUNRUTH_VARMA_PORTFOLIO-/main/SUNRUTH6.jpeg
 
        HOW TO GET THE RAW URL:
        1. Upload your images to a GitHub repository.
